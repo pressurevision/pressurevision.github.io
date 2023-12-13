@@ -120,7 +120,7 @@
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href=""
+                <a href="pressurevision2.pdf"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -128,18 +128,18 @@
                   <span>Paper</span>
                 </a>
               </span>
-              <span class="link-block">
-                <a href=""
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
+<!--              <span class="link-block">-->
+<!--                <a href=""-->
+<!--                   class="external-link button is-normal is-rounded is-dark">-->
+<!--                  <span class="icon">-->
+<!--                      <i class="ai ai-arxiv"></i>-->
+<!--                  </span>-->
+<!--                  <span>arXiv</span>-->
+<!--                </a>-->
+<!--              </span>-->
               <!-- Video Link. -->
               <span class="link-block">
-                <a href=""
+                <a href="https://youtu.be/MPHPIWfp7Bg"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-youtube"></i>
@@ -149,23 +149,24 @@
               </span>
               <!-- Code Link. -->
               <span class="link-block">
-                <a href=""
+                <a href="https://github.com/pgrady3/pressurevision2"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
                   </span>
-                  <span>Code</span>
+                  <span>Code/Data</span>
                   </a>
               </span>
               <!-- Dataset Link. -->
-              <span class="link-block">
-                <a href=""
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="far fa-images"></i>
-                  </span>
-                  <span>Data</span>
-                  </a>
+<!--              <span class="link-block">-->
+<!--                <a href=""-->
+<!--                   class="external-link button is-normal is-rounded is-dark">-->
+<!--                  <span class="icon">-->
+<!--                      <i class="far fa-images"></i>-->
+<!--                  </span>-->
+<!--                  <span>Data</span>-->
+<!--                  </a>-->
+<!--              </span>-->
             </div>
 
           </div>
@@ -178,131 +179,57 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-<!--       <video id="teaser" autoplay muted loop playsinline height="100%">
-        <source src="./static/videos/teaser.mp4"
-                type="video/mp4">
-      </video> -->
+<!--       <video id="teaser" autoplay muted loop playsinline height="100%">-->
+<!--        <source src="./static/videos/teaser.mp4"-->
+<!--                type="video/mp4">-->
+<!--      </video>-->
       <h2 class="subtitle has-text-centered">
-<!--         <span class="dnerf">Nerfies</span> turns selfie videos from your phone into
-        free-viewpoint
-        portraits. -->
-        Code, data, and paper coming soon!
+        <span class="dnerf">PressureVision++</span> identifies the <i>location</i> and <i>magnitude</i> of hand pressure from only a single RGB image.
       </h2>
     </div>
   </div>
 </section>
 
 
-<!-- <section class="hero is-light is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-steve">
-          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/steve.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-chair-tp">
-          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/chair-tp.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-shiba">
-          <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/shiba.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-fullbody">
-          <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/fullbody.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-blueshirt">
-          <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/blueshirt.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-mask">
-          <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/mask.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-coffee">
-          <video poster="" id="coffee" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/coffee.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-toby">
-          <video poster="" id="toby" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/toby2.mp4"
-                    type="video/mp4">
-          </video>
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Touch plays a fundamental role in manipulation for humans; however, machine perception
+            of contact and pressure typically requires invasive sensors.
+            Recent research has shown that deep models can estimate hand pressure based on a single RGB image.
+            However, evaluations have been limited to controlled settings since collecting diverse data with
+            ground-truth pressure measurements is difficult. We present a novel approach that enables diverse
+            data to be captured with only an RGB camera and a cooperative participant.
+            Our key insight is that people can be prompted to apply pressure in a certain way,
+            and this prompt can serve as a weak label to supervise models to perform well under varied conditions.
+            We collect a novel dataset with 51 participants making fingertip contact with diverse objects.
+            Our network, PressureVision++, outperforms human annotators and prior work.
+            We also demonstrate an application of PressureVision++ to mixed reality where pressure estimation allows everyday
+            surfaces to be used as arbitrary touch-sensitive interfaces.
+          </p>
         </div>
       </div>
     </div>
+    <!--/ Abstract. -->
+
+    <!-- Paper video. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+          <iframe src="https://www.youtube.com/embed/MPHPIWfp7Bg?rel=0&amp;showinfo=0"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    <!--/ Paper video. -->
   </div>
-</section> -->
-
-
-<!--<section class="section">-->
-<!--  <div class="container is-max-desktop">-->
-<!--    &lt;!&ndash; Abstract. &ndash;&gt;-->
-<!--    <div class="columns is-centered has-text-centered">-->
-<!--      <div class="column is-four-fifths">-->
-<!--        <h2 class="title is-3">Abstract</h2>-->
-<!--        <div class="content has-text-justified">-->
-<!--          <p>-->
-<!--            We present the first method capable of photorealistically reconstructing a non-rigidly-->
-<!--            deforming scene using photos/videos captured casually from mobile phones.-->
-<!--          </p>-->
-<!--          <p>-->
-<!--            Our approach augments neural radiance fields-->
-<!--            (NeRF) by optimizing an-->
-<!--            additional continuous volumetric deformation field that warps each observed point into a-->
-<!--            canonical 5D NeRF.-->
-<!--            We observe that these NeRF-like deformation fields are prone to local minima, and-->
-<!--            propose a coarse-to-fine optimization method for coordinate-based models that allows for-->
-<!--            more robust optimization.-->
-<!--            By adapting principles from geometry processing and physical simulation to NeRF-like-->
-<!--            models, we propose an elastic regularization of the deformation field that further-->
-<!--            improves robustness.-->
-<!--          </p>-->
-<!--          <p>-->
-<!--            We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie-->
-<!--            photos/videos into deformable NeRF-->
-<!--            models that allow for photorealistic renderings of the subject from arbitrary-->
-<!--            viewpoints, which we dub <i>"nerfies"</i>. We evaluate our method by collecting data-->
-<!--            using a-->
-<!--            rig with two mobile phones that take time-synchronized photos, yielding train/validation-->
-<!--            images of the same pose at different viewpoints. We show that our method faithfully-->
-<!--            reconstructs non-rigidly deforming scenes and reproduces unseen views with high-->
-<!--            fidelity.-->
-<!--          </p>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--    &lt;!&ndash;/ Abstract. &ndash;&gt;-->
-
-<!--    &lt;!&ndash; Paper video. &ndash;&gt;-->
-<!--    <div class="columns is-centered has-text-centered">-->
-<!--      <div class="column is-four-fifths">-->
-<!--        <h2 class="title is-3">Video</h2>-->
-<!--        <div class="publication-video">-->
-<!--          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"-->
-<!--                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--    &lt;!&ndash;/ Paper video. &ndash;&gt;-->
-<!--  </div>-->
-<!--</section>-->
+</section>
 
 
 <!--<section class="section">-->
@@ -442,26 +369,26 @@
 <!--</section>-->
 
 
-<!--<section class="section" id="BibTeX">-->
-<!--  <div class="container is-max-desktop content">-->
-<!--    <h2 class="title">BibTeX</h2>-->
-<!--    <pre><code>@article{park2021nerfies,-->
-<!--  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},-->
-<!--  title     = {Nerfies: Deformable Neural Radiance Fields},-->
-<!--  journal   = {ICCV},-->
-<!--  year      = {2021},-->
-<!--}</code></pre>-->
-<!--  </div>-->
-<!--</section>-->
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{grady2024pressurevision2,
+  author    = {Grady, Patrick and Collins, Jeremy A and Tang, Chengcheng and Twigg, Christopher D and Aneja, Kunal and Hays, James and Kemp, Charles C},
+  title     = {{PressureVision++}: Estimating Fingertip Pressure from Diverse RGB Images},
+  journal   = {IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
+  year      = {2024},
+}</code></pre>
+  </div>
+</section>
 
 
 <footer class="footer">
   <div class="container">
     <div class="content has-text-centered">
-      <a class="icon-link" href="">
+      <a class="icon-link" href="pressurevision2.pdf">
         <i class="fas fa-file-pdf"></i>
       </a>
-      <a class="icon-link" href="" class="external-link" disabled>
+      <a class="icon-link" href="https://github.com/pgrady3/pressurevision2" class="external-link" disabled>
         <i class="fab fa-github"></i>
       </a>
     </div>
